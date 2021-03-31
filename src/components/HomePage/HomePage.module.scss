@@ -45,15 +45,15 @@
 li{display: inline-block;}
 .clearfix{clear: both; float: none;}
 .container {max-width: 100%; width: 100%; height: 100%; padding:0;}
-.header {height: 120px; border-bottom: 4px solid #DD0030;}
+.header {height: 120px; border-bottom: 4px solid #DD0030; position: fixed; width: 100%; z-index:999; background-color: #fff;}
 .logo{padding-left: 100px; margin-top: 30px; float: left; height: 66px;}
-.logo img{height: 100%;}
+.logo img{height: 100%; width: 100%;}
 .menuitem{padding-right: 100px;}
 .menuitem ul{margin:0; padding:0; float: right; padding-top: 43px;}
 .menuitem li{display: inline-block; float:left; padding-left: 35px;}
 .menuitem li span{float: left; padding-right: 8px;}
 .menuitem a{font-size: 20px; font-family: 'Inter'; font-weight: 400; color: #535255 !important;}
-.sclmedia{height: 40px; float:left; width: 100%;}
+.sclmedia{height: 40px; float:left; width: 100%; margin-top:}
 .row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px;}
 .mailid{padding-left: 85px; margin-top: 5px;}
 .mailid span{padding-right: 10px; float:left}
@@ -64,8 +64,8 @@ li{display: inline-block;}
 .scllink ul{float: right; margin-right: 20px; line-height: 2;}
 .scllink ul li{padding-right: 20px;}
 .active{font-weight: bold !important;}
-.body{width: 85%; margin: 0 auto;  height: 420px; position: relative}
-.bnrs{width: 100%; background-color: #DD0030; height: 100%; margin-top: 24px;}
+.body{width: 85%; margin: 0 auto; position: relative}
+.bnrs{width: 100%; background-color: #DD0030; height: 420px; margin-top: 24px;}
 .slide1{color: #fff; float: right; width: 35% !important; margin-top: 70px; margin-right: 37px;}
 .splfont{color: #fff; font-size: 36px; font-family: Philosopher; line-height: 1.1;}
 .sldrfont{font-size: 24px; font-family: Inter; font-weight: 100; line-height: 1.3; padding-top: 10px;}
@@ -104,3 +104,143 @@ li{display: inline-block;}
 .brndlist ul{padding: 56px 91px;}
 .brndlist ul li{padding-left: 33px}
 .pl0{padding-left: 0 !important;}
+.menuicon{display: none;}
+@media(max-width: 1280px) and (min-width: 992px){
+    .menuitem li{padding-left: 15px;}
+    .menuitem a{font-size: 16px;}
+}
+@media(max-width: 1115px) and (min-width:992px){
+    .dirProfile, .qualityAssr, .productBio{padding: 0 20px;}
+}
+@media(max-width:991px) and(min-width: 768px){
+    .dirProfile, .qualityAssr, .productBio{padding: 0 15px; height: 100px;}
+    .dir{
+        width: 70px;
+        height: 80px;
+        margin-top: 10px;
+    }
+    .dirls {
+        width: 60px;
+        height: 60px;
+        margin-top: 25px;
+    }
+    .protxt{top: 30px; font-size: 18px;}
+    .qulty{
+        width: 60px;
+        height: 80px;
+        margin-top: 10px;
+    }
+    .qultyls {
+        width: 40px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .prdctls{
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .prdctls {
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+    }
+    .brndlist ul {
+        padding: 15px 40px;
+    }
+    .brndlist ul li{padding-bottom: 20px;}
+    .logo {
+        padding-left: 30px;
+        margin-top: 30px;
+        float: left;
+        height: 40px;
+        width: 200px;
+    }
+    .logo{padding-left: 15px}
+    .menuitem ul{padding-top: 35px;}
+    .menuitem ul a{font-size: 14px;}
+    .menuitem {
+        padding-right: 15px;
+        padding-right:15px;
+    }
+    .menuitem li{padding-left: 15px;}
+    .mailid{padding-left: 15px;}
+    .phoneno{padding-left: 15px;}
+    .mailnme, .phonenum{font-size: 14px;}    
+    .slide1{width: 50% !important; margin-top: 30px}
+    .splfont{font-size: 25px;}
+    .sldrfont{font-size: 20px;}
+    .list{width: 193px; height: 180px;}
+    .pronme{font-size: 18px;}
+    .proTitle, .brndTitle{font-size: 25px;}
+    .outProduct{margin-top: 25px;}
+    .bnrs{height: 270px;}
+
+}
+@media(max-width: 767px){
+ .menuicon{display: block;}
+ .logo{padding-left: 15px; margin-top: 15px; height: auto}
+ .header{height: 65px;}
+ .menuicon img{float: right; margin-top: 20px;}
+ .menuitem{display: none;}
+ .mailnme, .phonenum{display: none;}
+ .mailid{padding-left: 20px}
+ .phoneno span {padding-left: 10px;}
+ .scllink ul{padding-left: 10px;}
+ .scllink{padding-right: 0}
+ .scllink ul li {padding-right: 0px; padding-left: 10px;}
+ .bnrs{height: auto; margin-top: 24px;}
+ .splfont{width:60%; font-size: 1em; float: right}
+ .slide1{width: 100% !important; margin-right:0; margin-top: 0px; padding:10px; margin-bottom: 20px;}
+ .sldrfont{float: right; width: 60%; font-size: 0.6em;}
+ .dir{
+    width: 20px;
+    height: 25px;
+    margin-top: 10px;
+}
+.dirls {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.protxt{top: 30px; font-size: 18px;}
+.qulty{
+    width: 20px;
+    height: 30px;
+    margin-top: 10px;
+}
+.qultyls {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.prdctls{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.prdctls {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+.brndlist ul {
+    padding: 10px 10px;
+}
+.dirProfile, .qualityAssr, .productBio{padding: 0 5px; height: 50px !important}
+.protxt{top: 10px !important; font-size: 0.8em !important;}
+.row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px;}
+.pr10{padding-right: 0 !important;}
+.pl10{padding-left: 1px !important;}
+.proTitle, .brndTitle{font-size: 24px;}
+.list{width: 140px; height: 140px; margin-bottom: 10px; margin-right: 10px;}
+.pronme {
+    padding: 5px 10px;
+    font-size: 1.125em; 
+}
+.brndlist ul li {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.brand{height: auto;}
+}

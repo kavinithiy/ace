@@ -28,6 +28,7 @@ import sioux from '../../assets/images/sioux.png';
 import gesipa from '../../assets/images/gesipa.png';
 import sealey from '../../assets/images/sealey.png';
 import williams from '../../assets/images/williams.png';
+import menuicon from '../../assets/images/menuicon.png'
 import Slider from "react-slick";
 import "../../assets/css/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -49,10 +50,11 @@ function HomePage() {
     <div className={styles.container}>
       <div className={styles.header}>
         <div className={styles.row}>
-          <div className={`${styles.logo} col-lg-3`}>
+          <div className={`${styles.logo} col-lg-3 col-md-2 col-sm-4 col-5`}>
             <img src={logo}/>
-          </div>
-          <div className={`${styles.menuitem} col-lg-9`}>  
+          </div>          
+          <div className={`${styles.menuicon} col-sm-7 col-7`}><img src={menuicon}/></div>    
+          <div className={`${styles.menuitem} col-lg-9 col-md-10`}>  
             <ul>
               <li><span><img src={homeactive}/></span><a className={styles.active}>Home</a></li>
               <li><span><img src={abouticon}/></span><a>About us</a></li>
@@ -67,7 +69,7 @@ function HomePage() {
       <div className={styles.clearfix}></div>
       <div className={styles.sclmedia}>
         <div className={styles.row}>      
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-6 col-4">
             <div className={styles.mailid}>
               <span><img src={mailicon}/></span><div className={styles.mailnme}>Contact@acetechtools.com</div>
             </div>
@@ -75,7 +77,7 @@ function HomePage() {
               <span><img src={phoneicon}/></span><div className={styles.phonenum}>044 4551 3804</div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-6 col-8">
             <div className={styles.scllink}>
               <ul>
                 <li><img src={fb}/></li>
@@ -105,7 +107,7 @@ function HomePage() {
         </div>
         <div className={styles.abtdetail}>
           <div className="row">
-            <div className={`${styles.pr10} col-lg-4`}>              
+            <div className={`${styles.pr10} col-lg-4 col-md-4 col-sm-4 col-4`}>              
               <div className={styles.dirProfile }>           
                 <img src={directorls} className={`${styles.fr} ${styles.dirls}`}/>                
                 <div className={styles.prodet}>                    
@@ -117,7 +119,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-            <div className={`${styles.pr10} ${styles.pl10} col-lg-4`}>
+            <div className={`${styles.pr10} ${styles.pl10} col-lg-4 col-md-4 col-sm-4 col-4`}>
                 <div className={styles.qualityAssr}>
                   <img src={qualityls} className={`${styles.fr} ${styles.qultyls}`}/>
                   <div className={styles.prodet}>   
@@ -129,7 +131,7 @@ function HomePage() {
                   </div>
                 </div>
             </div>
-            <div className={`${styles.pl10} col-lg-4`}>
+            <div className={`${styles.pl10} col-lg-4 col-md-4 col-sm-4 col-4`}>
                 <div className={styles.productBio}>
                   <img src={productls} className={`${styles.fr} ${styles.prdctls}`}/>
                   <div className={styles.prodet}></div> 
