@@ -53,7 +53,18 @@ function HomePage() {
           <div className={`${styles.logo} col-lg-3 col-md-2 col-sm-4 col-5`}>
             <img src={logo}/>
           </div>          
-          <div className={`${styles.menuicon} col-sm-7 col-7`}><img src={menuicon}/></div>    
+          <div className={`${styles.menuicon} col-sm-7 col-7`}  onClick={openNav}><img src={menuicon}/></div>    
+          <div id="mySidenav" className={styles.sidenav}>
+            <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}><span className={styles.closebtn}>&times;</span></a>
+            <ul>
+              <li><span><img src={homeactive}/></span><a className={styles.active}>Home</a></li>
+              <li><span><img src={abouticon}/></span><a>About us</a></li>
+              <li><span><img src={producticon}/></span><a>Our Products</a></li>
+              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={contacticon}/></span><a>Contact</a></li>
+            </ul> 
+          </div>
           <div className={`${styles.menuitem} col-lg-9 col-md-10`}>  
             <ul>
               <li><span><img src={homeactive}/></span><a className={styles.active}>Home</a></li>
@@ -200,6 +211,13 @@ function HomePage() {
       </div>
     </div> 
   );
+}
+function openNav(){
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
 HomePage.propTypes = {};
 

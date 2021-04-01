@@ -53,16 +53,17 @@ li{display: inline-block;}
 .menuitem li{display: inline-block; float:left; padding-left: 35px;}
 .menuitem li span{float: left; padding-right: 8px;}
 .menuitem a{font-size: 20px; font-family: 'Inter'; font-weight: 400; color: #535255 !important;}
-.sclmedia{height: 40px; float:left; width: 100%; margin-top:}
-.row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px;}
-.mailid{padding-left: 85px; margin-top: 5px;}
+.sclmedia{height: 40px; float:left; width: 100%; margin-top:120px; background-color:#EEEEEE;}
+.row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px; height: 100%}
+.mailid{padding-left: 85px; padding-right: 15px; margin-top: 0px; float:left; border-right: 1px solid #DDDDDD;}
 .mailid span{padding-right: 10px; float:left}
 .mailnme{font-size: 16px; font-style: italic; font-weight: 400; line-height:1.8; font-family: Philosopher; color: #535255; float:left;}
-.phoneno span{ padding-left: 30px; float:left; padding-right: 8px;}
+.phoneno{float: left; padding-left: 15px;}
+.phoneno span{float:left; padding-right: 8px;}
 .phonenum{font-size: 16px; font-style: italic; font-weight: 400; line-height:1.8; font-family: Philosopher; color: #535255; float:left;}
 .scllink{float: right; padding-right: 40px;}
 .scllink ul{float: right; margin-right: 20px; line-height: 2;}
-.scllink ul li{padding-right: 20px;}
+.scllink ul li{padding-right: 10px; padding-left: 10px; border-left: 1px solid #DDDDDD;  border-right: 1px solid #DDDDDD;}
 .active{font-weight: bold !important;}
 .body{width: 85%; margin: 0 auto; position: relative}
 .bnrs{width: 100%; background-color: #DD0030; height: 420px; margin-top: 24px;}
@@ -84,6 +85,7 @@ li{display: inline-block;}
 .prodet{float: left; position: relative;}
 .protxt{position: absolute; color: #fff; font-family: 'Inter'; top: 45px; font-size: 28px; line-height: 1.1;}
 .nmetxt{font-weight: 100}
+.sidenav{display: none;}
 .outProduct{width: 100%; margin-top: 50px;}
 .proTitle{font-family: Philosopher; font-size: 32px; font-weight: bold; color: #333235; text-align: center; margin-bottom: 15px}
 .list{width: 209px; height: 200px; border-radius:2px; float:left; margin-right:18px; margin-bottom: 30px;}
@@ -178,17 +180,19 @@ li{display: inline-block;}
 
 }
 @media(max-width: 767px){
+ .sclmedia{margin-top: 70px !important;}
  .menuicon{display: block;}
  .logo{padding-left: 15px; margin-top: 15px; height: auto}
  .header{height: 65px;}
  .menuicon img{float: right; margin-top: 20px;}
  .menuitem{display: none;}
  .mailnme, .phonenum{display: none;}
- .mailid{padding-left: 20px}
+ .mailid{padding-left: 10px; padding-right: 5px;}
+ .phoneno{padding-left: 5px}
  .phoneno span {padding-left: 10px;}
- .scllink ul{padding-left: 10px;}
- .scllink{padding-right: 0}
- .scllink ul li {padding-right: 0px; padding-left: 10px;}
+ .scllink ul{padding-left: 10px; margin-right:0}
+ .scllink{padding-right: 0;}
+ .scllink ul li {padding-right: 0px; padding-left: 7px; padding-right: 7px; border-left: 1px solid #DDDDDD; border-right: 1px solid #DDDDDD;}
  .bnrs{height: auto; margin-top: 24px;}
  .splfont{width:60%; font-size: 1em; float: right}
  .slide1{width: 100% !important; margin-right:0; margin-top: 0px; padding:10px; margin-bottom: 20px;}
@@ -198,38 +202,16 @@ li{display: inline-block;}
     height: 25px;
     margin-top: 10px;
 }
-.dirls {
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
-}
+.dirls {width: 20px; height: 20px; margin-top: 15px;}
 .protxt{top: 30px; font-size: 18px;}
-.qulty{
-    width: 20px;
-    height: 30px;
-    margin-top: 10px;
-}
-.qultyls {
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
-}
-.prdctls{
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
-}
-.prdctls {
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
-}
-.brndlist ul {
-    padding: 10px 10px;
-}
+.qulty{width: 20px; height: 30px; margin-top: 10px;}
+.qultyls {width: 20px; height: 20px; margin-top: 15px;}
+.prdctls{width: 20px; height: 20px; margin-top: 15px;}
+.prdctls {width: 20px; height: 20px; margin-top: 15px;}
+.brndlist ul {padding: 10px 10px;}
 .dirProfile, .qualityAssr, .productBio{padding: 0 5px; height: 50px !important}
 .protxt{top: 10px !important; font-size: 0.8em !important;}
-.row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px;}
+.row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px; height: 100%;}
 .pr10{padding-right: 0 !important;}
 .pl10{padding-left: 1px !important;}
 .proTitle, .brndTitle{font-size: 24px;}
@@ -243,4 +225,40 @@ li{display: inline-block;}
     padding-bottom: 20px;
 }
 .brand{height: auto;}
+.sidenav span{float: left;}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: block !important;
+  }
+  
+  .sidenav a {
+    padding: 0px 0px 15px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Inter;
+    color: #818181 !important;
+    display: block;
+    transition: 0.3s;
+    width: 210px;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px; 
+  }
 }
