@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 import logo from '../../assets/images/logo.png';
 import homeactive from '../../assets/images/home_active.png';
 import abouticon from '../../assets/images/about_icon.png';
@@ -58,9 +59,9 @@ function HomePage() {
             <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}><span className={styles.closebtn}>&times;</span></a>
             <ul>
               <li><span><img src={homeactive}/></span><a className={styles.active}>Home</a></li>
-              <li><span><img src={abouticon}/></span><a>About us</a></li>
+              <li><span><img src={abouticon}/></span><a><Link to="/Aboutus">About us</Link></a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
               <li><span><img src={careericon}/></span><a>Career</a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul> 
@@ -68,9 +69,9 @@ function HomePage() {
           <div className={`${styles.menuitem} col-lg-9 col-md-10`}>  
             <ul>
               <li><span><img src={homeactive}/></span><a className={styles.active}>Home</a></li>
-              <li><span><img src={abouticon}/></span><a>About us</a></li>
+              <li><span><img src={abouticon}/></span><a><Link to="/Aboutus">About us</Link></a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
               <li><span><img src={careericon}/></span><a>Career</a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul>     

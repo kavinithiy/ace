@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 import logo from '../../assets/images/logo.png';
 import homeicon from '../../assets/images/home_icon.png';
 import aboutactive from '../../assets/images/about_active.png';
@@ -21,8 +22,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery';
 import styles from './WhyUs.module.scss';
 
-function WhyUs() { 
-  return (   
+const WhyUs = () => (
+  <div className={styles.WhyUs} data-testid="WhyUs">
     <div className={styles.container}>
       <div className={styles.header}>
         <div className={styles.row}>
@@ -80,11 +81,11 @@ function WhyUs() {
       <div className={styles.abtcompany}>
         <div className={styles.profileList}>
           <ul>
-            <li>Company Profile</li>
-            <li>Director Profile</li>
-            <li className={styles.activemenu}>Why Us</li>
-            <li>Product Portfolio</li>
-            <li>Quality Assurance</li>
+            <li><a><Link to="/Aboutus">Company Profile</Link></a></li>
+            <li><a><Link to="/DirectorProfile">Director Profile</Link></a></li>
+            <li className={styles.activemenu}><a>Why Us</a></li>
+            <li><a><Link to="/Product">Product Portfolio</Link></a></li>
+            <li><a><Link to="/Quality">Quality Assurance</Link></a></li>
           </ul>
         </div>
       </div>
@@ -103,25 +104,27 @@ function WhyUs() {
             </div>
             <div className={styles.keyStrength}>
               <div className={styles.strengthtitle}>Some of our key strengths are</div>
-              <div className={styles.row}>
-                <div className="col-lg-12 col-md-12">
-                  <ul>
-                    <li><span><img src={liicon}/></span>Application Study</li>
-                    <li><span><img src={liicon}/></span>Quality Assurance</li>
-                    <li><span><img src={liicon}/></span> Timely Delivery of Our Products</li>
-                    <li><span><img src={liicon}/></span>Industry Leading Prices</li>
-                    <li><span><img src={liicon}/></span>Application Study</li>
-                    <li><span><img src={liicon}/></span>Application Study</li>
-                  </ul>   
-                </div>
-              </div>
+              <div className={styles.row}></div>
+              <div className={`col-lg-12 col-md-12 ${styles.pl0}`}>
+                <ul>
+                  <li><span><img src={liicon}/></span>Application Study</li>
+                  <li><span><img src={liicon}/></span>Ethical Business Approach</li>
+                  <li><span><img src={liicon}/></span>Quality Assurance</li>
+                  <li><span><img src={liicon}/></span>Hydraulic Solutions</li>
+                  <li><span><img src={liicon}/></span>Timely Delivery of Our Products</li>
+                  <li><span><img src={liicon}/></span> Broad and Systematic Distribution System</li>        
+                  <li><span><img src={liicon}/></span> Industry Leading Prices</li>
+                  <li><span><img src={liicon}/></span>Bolting Solutions</li>
+                </ul>          
+              </div>          
             </div>
           </div>
         </div>
       </div>
     </div>    
-  );
-}
+  </div>  
+);
+
 function openNav(){
   document.getElementById("mySidenav").style.width = "250px";
 }

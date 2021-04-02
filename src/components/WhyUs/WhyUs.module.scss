@@ -42,6 +42,7 @@
     font-weight: 100;
     font-style: normal;
 }
+.pl0{padding-left:0 !important;}
 li{display: inline-block;}
 .clearfix{clear: both; float: none;}
 .container {max-width: 100%; width: 100%; height: 100%; padding:0;}
@@ -71,13 +72,18 @@ li{display: inline-block;}
 .abtcompany{margin-top:0; height: 50px; background: #FFFFFF;  box-shadow: 0px 2px 20px #E5E5E5;}
 .profileList{width:100%; margin: 0 auto; line-height: 3;}
 .profileList ul{text-align: center;}
-.profileList ul li{padding-right: 20px; padding-left: 20px; font-family: Philosopher; font-size: 18px;}
+.profileList ul li{padding-right: 20px; padding-left: 20px; font-family: Philosopher; font-size: 18px; height: 50px;}
 .title{font-size: 36px; font-family: Inter; font-style: italic; color: #333235}
 .title span{font-weight: bold;}
 .details{font-family: Inter; font-size: 18px;}
 .profileImg img{width: 100%;}
 .companyProfile{padding: 50px 70px;}
 .activemenu{color: #DD0030; font-weight: bold; border-bottom: 3px solid #DD0030;}
+.keyStrength{margin-top: 30px;}
+.keyStrength ul{margin-top: 20px; padding-left:0}
+.keyStrength ul li{width: 45%; font-size: 20px; font-style: italic; font-family: Inter; padding-bottom: 15px; color: #333235}
+.keyStrength ul li span{float:left; padding-right: 15px;}
+.profileList ul li a{color: #535255; text-decoration: none;}
 @media(max-width: 1280px) and (min-width: 992px){
     .menuitem li{padding-left: 15px;}
     .menuitem a{font-size: 16px;}
@@ -160,4 +166,5 @@ li{display: inline-block;}
     .title{text-align: center; margin-top: 25px; margin-bottom: 10px; font-size: 30px;}
     .profileList ul li {padding-right: 10px; padding-left: 10px; font-family: Philosopher; font-size: 16px;}
     .abtcompany{height: auto;}
-}    
+    .keyStrength ul li{width: 100%;}
+}

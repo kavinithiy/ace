@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 import logo from '../../assets/images/logo.png';
 import homeicon from '../../assets/images/home_icon.png';
 import aboutactive from '../../assets/images/about_active.png';
@@ -31,20 +32,20 @@ function Aboutus() {
           <div id="mySidenav" className={styles.sidenav}>
             <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}><span className={styles.closebtn}>&times;</span></a>
             <ul>
-              <li><span><img src={homeicon}/></span><a>Home</a></li>
+              <li><span><img src={homeicon}/></span><a><Link to="/HomePage">Home</Link></a></li>
               <li><span><img src={aboutactive}/></span><a className={styles.active}>About us</a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
               <li><span><img src={careericon}/></span><a>Career</a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul> 
           </div>
           <div className={`${styles.menuitem} col-lg-9 col-md-10`}>  
             <ul>
-              <li><span><img src={homeicon}/></span><a>Home</a></li>
+              <li><span><img src={homeicon}/></span><a><Link to="/HomePage">Home</Link></a></li>
               <li><span><img src={aboutactive}/></span><a className={styles.active}>About us</a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
               <li><span><img src={careericon}/></span><a>Career</a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul>     
@@ -79,10 +80,10 @@ function Aboutus() {
         <div className={styles.profileList}>
           <ul>
             <li className={styles.activemenu}>Company Profile</li>
-            <li>Director Profile</li>
-            <li>Why Us</li>
-            <li>Product Portfolio</li>
-            <li>Quality Assurance</li>
+            <li><a><Link to="/DirectorProfile">Director Profile</Link></a></li>
+            <li><a><Link to="/WhyUs">Why Us</Link></a></li>
+            <li><a><Link to="/Product">Product Portfolio</Link></a></li>
+            <li><a><Link to="/Quality">Quality Assurance</Link></a></li>
           </ul>
         </div>
       </div>

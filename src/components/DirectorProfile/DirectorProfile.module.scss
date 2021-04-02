@@ -71,13 +71,14 @@ li{display: inline-block;}
 .abtcompany{margin-top:0; height: 50px; background: #FFFFFF;  box-shadow: 0px 2px 20px #E5E5E5;}
 .profileList{width:100%; margin: 0 auto; line-height: 3;}
 .profileList ul{text-align: center;}
-.profileList ul li{padding-right: 20px; padding-left: 20px; font-family: Philosopher; font-size: 18px;}
+.profileList ul li{padding-right: 20px; padding-left: 20px; font-family: Philosopher; font-size: 18px; height: 50px;}
 .title{font-size: 36px; font-family: Inter; font-style: italic; color: #333235}
 .title span{font-weight: bold;}
 .details{font-family: Inter; font-size: 18px;}
 .profileImg img{width: 100%;}
 .companyProfile{padding: 50px 70px;}
-.active{color: #DD0030; font-weight: bold; border-bottom: 3px solid #DD0030;}
+.activemenu{color: #DD0030; font-weight: bold; border-bottom: 3px solid #DD0030;}
+.profileList ul li a{color: #535255; text-decoration: none;}
 @media(max-width: 1280px) and (min-width: 992px){
     .menuitem li{padding-left: 15px;}
     .menuitem a{font-size: 16px;}

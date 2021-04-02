@@ -1,1 +1,216 @@
-.Career {}
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face{
+    font-family: Philosopher;
+    src: url(../../assets/fonts/Philosopher-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face{
+    font-family: Philosopher;
+    src: url(../../assets/fonts/Philosopher-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Philosopher;
+    src: url(../../assets/fonts/Philosopher-BoldItalic.ttf) format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face{
+    font-family: Philosopher;
+    src: url(../../assets/fonts/Philosopher-Italic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face{
+    font-family: Inter;
+    src: url(../../assets/fonts/Inter-Bold-slnt=0.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: Inter;
+    src: url(../../assets/fonts/Inter-Regular-slnt=0.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Inter;
+    src: url(../../assets/fonts/Inter-ExtraLight-slnt=0.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+.pl0{padding-left:0 !important;}
+li{display: inline-block;}
+.clearfix{clear: both; float: none;}
+.container {max-width: 100%; width: 100%; height: 100%; padding:0;}
+.header {height: 120px; border-bottom: 4px solid #DD0030; position: fixed; width: 100%; z-index:999; background-color: #fff;}
+.logo{padding-left: 100px; margin-top: 30px; float: left; height: 66px;}
+.logo img{height: 100%; width: 100%;}
+.menuitem{padding-right: 100px;}
+.menuitem ul{margin:0; padding:0; float: right; padding-top: 43px;}
+.menuitem li{display: inline-block; float:left; padding-left: 35px;}
+.menuitem li span{float: left; padding-right: 8px;}
+.menuitem a{font-size: 20px; font-family: 'Inter'; font-weight: 400; color: #535255 !important;}
+.sclmedia{height: 40px; float:left; width: 100%; margin-top:120px; background-color:#EEEEEE;}
+.row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px; height: 100%}
+.mailid{padding-left: 85px; padding-right: 15px; margin-top: 0px; float:left; border-right: 1px solid #DDDDDD;}
+.mailid span{padding-right: 10px; float:left}
+.mailnme{font-size: 16px; font-style: italic; font-weight: 400; line-height:1.8; font-family: Philosopher; color: #535255; float:left;}
+.phoneno{float: left; padding-left: 15px;}
+.phoneno span{float:left; padding-right: 8px;}
+.phonenum{font-size: 16px; font-style: italic; font-weight: 400; line-height:1.8; font-family: Philosopher; color: #535255; float:left;}
+.scllink{float: right; padding-right: 40px;}
+.scllink ul{float: right; margin-right: 20px; line-height: 2;}
+.scllink ul li{padding-right: 10px; padding-left: 10px; border-left: 1px solid #DDDDDD;  border-right: 1px solid #DDDDDD;}
+.active{font-weight: bold !important;}
+.body{width: 85%; margin: 0 auto; position: relative}
+.sidenav{display: none;}
+.menuicon{display: none;}
+.carrTitle{background: linear-gradient(90deg, #333235 0%, #555555 100%);
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Inter';
+    font-style: italic;
+    padding: 17px 100px;}
+.abtMenu{display: none}
+.frmcntrl{font-size: 18px; font-family: Inter; color: #333235;}
+form{padding: 25px 75px;}
+.frmBox{height: 50px; border-style: dashed;}
+.frmBox:focus, .frmtextarea:focus{border-color: #495057; box-shadow: none;}
+.filetxt{font-size: 0;}
+.fileicon{padding: 13px; position: absolute; background-color: #535255; top: 35px; right: 0;}
+.fileFld{position: relative}
+.frmCntl{width: 100%; float:left}
+.leftSide{width:50%; padding:25px; float:left}
+.rightside{width: 50%; float: right; padding:25px}
+.frmtextarea{height: 350px !important;}
+.btsIcon{float: right; margin-top: 6px;}
+.submitbtn{padding:18px 26px; color: #fff; background-color: #C4C4C4; margin-top: 43px; text-align: center; font-size: 20px; font-family: Inter; border-radius: 2px; border: none}
+@media(max-width: 1280px) and (min-width: 992px){
+    .menuitem li{padding-left: 15px;}
+    .menuitem a{font-size: 16px;}
+}
+@media(max-width:991px) and(min-width: 768px){
+    .logo {
+        padding-left: 30px;
+        margin-top: 30px;
+        float: left;
+        height: 40px;
+        width: 200px;
+    }
+    .logo{padding-left: 15px}
+    .menuitem ul{padding-top: 35px;}
+    .menuitem ul a{font-size: 14px;}
+    .menuitem {
+        padding-right: 15px;
+        padding-right:15px;
+    }
+    .menuitem li{padding-left: 15px;}
+    .mailid{padding-left: 15px;}
+    .phoneno{padding-left: 15px;}
+    .mailnme, .phonenum{font-size: 14px;}    
+}
+@media(max-width: 767px){
+    .sclmedia{margin-top: 70px !important;}
+    .menuicon{display: block;}
+    .logo{padding-left: 15px; margin-top: 15px; height: auto}
+    .header{height: 65px;}
+    .menuicon img{float: right; margin-top: 20px;}
+    .menuitem{display: none;}
+    .mailnme, .phonenum{display: none;}
+    .mailid{padding-left: 10px; padding-right: 5px;}
+    .phoneno{padding-left: 5px}
+    .phoneno span {padding-left: 10px;}
+    .scllink ul{padding-left: 10px; margin-right:0}
+    .scllink{padding-right: 0}
+    .scllink ul li {padding-right: 0px; padding-left: 7px; padding-right: 7px; border-left: 1px solid #DDDDDD; border-right: 1px solid #DDDDDD;}
+    .row{display: flex; flex-wrap: wrap; margin-right: 0px; margin-left: 0px; height: 100%;}
+    .pr10{padding-right: 0 !important;}
+    .pl10{padding-left: 1px !important;}
+    .sidenav span{float: left;}
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: block !important;
+    }
+    
+    .sidenav a {
+        padding: 0px 0px 15px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Inter;
+        color: #818181 !important;
+        display: block;
+        transition: 0.3s;
+        width: 210px;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px; 
+    }
+    
+    .abtMenu {
+        height: 300px;
+        float: left;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background-color: #50262f;
+        overflow-x: hidden;
+        transition: 0.5s;        
+        margin-top: 150px;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: none;
+    }
+
+    .abtMenu li{
+        display: block;
+        color: #fff !important;       
+        width: 100%;
+        line-height: 2;              
+    }
+    
+    .abtMenu a {
+        padding: 0px 0px 15px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Philosopher; 
+        color: #818181 !important;
+        display: block;
+        transition: 0.3s;
+        width: 210px;
+    }
+    
+    .abtMenu a:hover {
+        color: #f1f1f1;
+    }
+    
+    .abtMenu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px; 
+    }
+    
+}    
