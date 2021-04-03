@@ -88,9 +88,9 @@ li{display: inline-block;}
 .sidenav{display: none;}
 .outProduct{width: 100%; margin-top: 50px;}
 .proTitle{font-family: Philosopher; font-size: 32px; font-weight: bold; color: #333235; text-align: center; margin-bottom: 15px}
-.list{width: 209px; height: 200px; border-radius:2px; float:left; margin-right:18px; margin-bottom: 30px;}
-.pronme{padding: 10px 20px; font-size: 24px; font-family: 'Philosopher'; font-style: italic; font-weight: 700;}
-.selectedbox{box-shadow: 0px 0px 12px #FFB8B8; height: 100%; color: #DD0030;}
+.list{position: relative; width: 209px; height: 200px; border-radius:2px; float:left; margin-right:18px; margin-bottom: 30px;}
+.pronme{padding: 10px 20px; font-size: 24px; font-family: 'Philosopher'; font-style: italic; font-weight: 700; color: #DD0030;position: absolute; top: 0; width: 100%; height: 100%; box-shadow: 0px 6px 39px 5px #9e9e9e;}
+.selectedbox{box-shadow: 0px 0px 12px #FFB8B8; height: 100%;}
 .brand{margin-top: 15px; height: 222px; width: 100%; background-color: #333235;}
 .brndTitle{font-size: 32px; color: #fff; font-family: Philosopher; font-weight: bold; padding-top: 15px; text-align: center;}
 .bluepoint{Width: 141.79px; Height: 18.25px}

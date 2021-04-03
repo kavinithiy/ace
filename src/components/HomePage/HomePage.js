@@ -31,6 +31,16 @@ import sealey from '../../assets/images/sealey.png';
 import williams from '../../assets/images/williams.png';
 import menuicon from '../../assets/images/menuicon.png'
 import Slider from "react-slick";
+import snapimg from '../../assets/images/snap.jpg';
+import atlasimg from '../../assets/images/atlas.jpg';
+import gesipaimg from '../../assets/images/gesipa.jpg';
+import sealayimg from '../../assets/images/sealay.jpg';
+import foamimg from '../../assets/images/foam.jpg';
+import williamsimg from '../../assets/images/williams.jpg';
+import siouximg from '../../assets/images/sealay.jpg';
+import bluepointimg from '../../assets/images/bluepoint.jpg';
+import bahcoimg from '../../assets/images/bahco.jpg';
+import cdiimg from '../../assets/images/cdi.jpg';
 import "../../assets/css/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/css/slick-theme.css";
@@ -59,10 +69,10 @@ function HomePage() {
             <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}><span className={styles.closebtn}>&times;</span></a>
             <ul>
               <li><span><img src={homeactive}/></span><a className={styles.active}>Home</a></li>
-              <li><span><img src={abouticon}/></span><a><Link to="/Aboutus">About us</Link></a></li>
+              <li><span><img src={abouticon}/></span><Link to="/Aboutus">About us</Link></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
-              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={enquiryicon}/></span><Link to="/Enquiry">Enquiry</Link></li>
+              <li><span><img src={careericon}/></span><Link to="/Career">Career</Link></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul> 
           </div>
@@ -72,7 +82,7 @@ function HomePage() {
               <li><span><img src={abouticon}/></span><a><Link to="/Aboutus">About us</Link></a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
               <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
-              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={careericon}/></span><a><Link to="/Career">Career</Link></a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul>     
           </div>
@@ -161,34 +171,44 @@ function HomePage() {
           <div className={styles.proTitle}>Our Products</div>
           <div className={styles.proList}>
             <div className={styles.list}>
+               <img src={snapimg}/>
               <div className={`${styles.pronme} ${styles.selectedbox}`}>Snap on</div>
             </div>
             <div className={styles.list}>
+              <img src={atlasimg}/>
               <div className={styles.pronme}>Atlas Copco</div>
             </div>
             <div className={styles.list}>
+              <img src={gesipaimg}/>
               <div className={styles.pronme}>Gesipa</div>
             </div>
             <div className={styles.list}>
+              <img src={sealayimg}/>
               <div className={styles.pronme}>Sealey</div>
             </div>
             <div className={styles.list}>
+              <img src={foamimg}/>
               <div className={styles.pronme}>Foam Program</div>
             </div>
             <div className={styles.list}>
+              <img src={williamsimg}/>
               <div className={styles.pronme}>Williams</div>
             </div>
             <div className={styles.list}>
+              <img src={siouximg}/>
               <div className={styles.pronme}>Sioux</div>
             </div>
             <div className={styles.list}>
-              <div className={styles.pronme}>Sioux</div>
+              <img src={bluepointimg}/>
+              <div className={styles.pronme}>Blue-Point</div>
             </div>          
             <div className={styles.list}>
-              <div className={styles.pronme}>Sioux</div>
+              <img src={bahcoimg}/>
+              <div className={styles.pronme}>Bahco</div>
             </div>
             <div className={styles.list}>
-              <div className={styles.pronme}>Sioux</div>
+              <img src={cdiimg}/>
+              <div className={styles.pronme}>CDI Torque</div>
             </div>
           </div>
         </div>            

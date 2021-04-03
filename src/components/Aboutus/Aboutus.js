@@ -32,11 +32,11 @@ function Aboutus() {
           <div id="mySidenav" className={styles.sidenav}>
             <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}><span className={styles.closebtn}>&times;</span></a>
             <ul>
-              <li><span><img src={homeicon}/></span><a><Link to="/HomePage">Home</Link></a></li>
+              <li><span><img src={homeicon}/></span><Link to="/HomePage">Home</Link></li>
               <li><span><img src={aboutactive}/></span><a className={styles.active}>About us</a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
-              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={enquiryicon}/></span><Link to="/Enquiry">Enquiry</Link></li>
+              <li><span><img src={careericon}/></span><Link to="/Career">Career</Link></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul> 
           </div>
@@ -46,7 +46,7 @@ function Aboutus() {
               <li><span><img src={aboutactive}/></span><a className={styles.active}>About us</a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
               <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
-              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={careericon}/></span><a><Link to="/Career">Career</Link></a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul>     
           </div>

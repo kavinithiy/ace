@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 import logo from '../../assets/images/logo.png';
 import homeicon from '../../assets/images/home_icon.png';
 import abouticon from '../../assets/images/about_icon.png';
@@ -35,20 +36,20 @@ const Career = () => (
           <div id="mySidenav" className={styles.sidenav}>
             <a href="javascript:void(0)" className={styles.closebtn} onClick={closeNav}><span className={styles.closebtn}>&times;</span></a>
             <ul>
-              <li><span><img src={homeicon}/></span><a>Home</a></li>
-              <li><span><img src={abouticon}/></span><a>About us</a></li>
+              <li><span><img src={homeicon}/></span><Link to="/HomePage">Home</Link></li>
+              <li><span><img src={abouticon}/></span><Link to="/Aboutus">About Us</Link></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={enquiryicon}/></span><Link to="/Enquiry">Enquiry</Link></li>
               <li><span><img src={careeractive}/></span><a className={styles.active}>Career</a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul> 
           </div>
           <div className={`${styles.menuitem} col-lg-9 col-md-10`}>  
             <ul>
-              <li><span><img src={homeicon}/></span><a>Home</a></li>
-              <li><span><img src={abouticon}/></span><a>About us</a></li>
+              <li><span><img src={homeicon}/></span><a><Link to="/HomePage">Home</Link></a></li>
+              <li><span><img src={abouticon}/></span><a><Link to="/Aboutus">About Us</Link></a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
+              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
               <li><span><img src={careeractive}/></span><a className={styles.active}>Career</a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul>     
@@ -96,9 +97,10 @@ const Career = () => (
                 <label for="mobile" className={styles.frmcntrl}>Mobile No<Asterisk color="#DD0030" size={8} className={styles.btsIcon} /></label>
                 <input type="number" className={`form-control ${styles.frmBox}`} id="mobile" required></input>
               </div>
-              <div className={`form-group ${styles.fileFld} ${styles.frmCntl}`}>
-                <label for="attachment" className={styles.frmcntrl}>Attachments<Asterisk color="#DD0030" size={8} className={styles.btsIcon} /><img src={fileIcon} className={styles.fileicon}/></label>              
-                <input type="file" className={`form-control ${styles.frmBox} ${styles.filetxt}`} id="attachment" placeholder="Drag & Drop here" required></input>
+              <div className={`form-group ${styles.fileFld} ${styles.frmCntl}`}> 
+                <label className={styles.frmcntrl}>Attachments<Asterisk color="#DD0030" size={8} className={styles.btsIcon} /></label>                             
+                <input type="file" id="attachment" hidden></input>
+                <label for="attachment" className={`form-control ${styles.frmBox} ${styles.filetxt} ${styles.attach}`}>Drag & Drop here<Asterisk color="#DD0030" size={8} className={styles.btsIcon} /><img src={fileIcon} className={styles.fileicon}/></label>
               </div>
             </div>
             <div className={styles.rightside}>
@@ -107,7 +109,10 @@ const Career = () => (
                 <textarea className={`form-control ${styles.frmtextarea} ${styles.filetxt}`} id="textara" required></textarea>
               </div>
             </div>
-            <button type="submit" className={styles.submitbtn}>Submit</button>
+            <div className={styles.clearfix}></div>
+            <div className={styles.submitdata}>
+              <button type="submit" className={styles.submitbtn}>Submit</button>
+            </div>
           </form>
         </div>
       </div>

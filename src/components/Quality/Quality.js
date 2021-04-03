@@ -37,8 +37,8 @@ const Quality = () => (
               <li><span><img src={homeicon}/></span><a><Link to="/HomePage">Home</Link></a></li>
               <li><span><img src={aboutactive}/></span><a className={styles.active}>About us</a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
-              <li><span><img src={enquiryicon}/></span><a>Enquiry</a></li>
-              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
+              <li><span><img src={careericon}/></span><a><Link to="/Career">Career</Link></a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul> 
           </div>
@@ -48,7 +48,7 @@ const Quality = () => (
               <li><span><img src={aboutactive}/></span><a className={styles.active}>About us</a></li>
               <li><span><img src={producticon}/></span><a>Our Products</a></li>
               <li><span><img src={enquiryicon}/></span><a><Link to="/Enquiry">Enquiry</Link></a></li>
-              <li><span><img src={careericon}/></span><a>Career</a></li>
+              <li><span><img src={careericon}/></span><a><Link to="/Career">Career</Link></a></li>
               <li><span><img src={contacticon}/></span><a>Contact</a></li>
             </ul>     
           </div>
